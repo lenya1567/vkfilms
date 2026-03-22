@@ -20,7 +20,6 @@ export default defineConfig(({ mode }) => {
           target: 'https://api.poiskkino.dev',
           changeOrigin: true,
           rewrite: (path) => {
-            (path)
             return path.replace(/^\/api/, '')
           },
           headers: {

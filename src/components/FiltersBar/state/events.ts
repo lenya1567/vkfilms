@@ -26,7 +26,6 @@ $filters.on(updateFilters, (state, payload) => {
 
 export const submitFilters = createEvent<{ reset: boolean }>();
 $filters.on(submitFilters, (state, payload) => {
-    console.log(state);
     if (payload.reset) {
         return {
             genres: [],

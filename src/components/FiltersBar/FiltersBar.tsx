@@ -86,7 +86,6 @@ export function FiltersBar(props: FiltersBarProps) {
     useEffect(() => {
         const observer = new ResizeObserver((entries) => {
             const entry = entries[0];
-            console.log(entry.contentRect.height);
             setSpacingSize(entry.contentRect.height);
         });
 

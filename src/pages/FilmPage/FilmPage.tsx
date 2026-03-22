@@ -37,7 +37,6 @@ export function FilmPage() {
     }, [setOpenLikeModal, filmData]);
 
     useEffect(() => {
-        console.log(id)
         fetchFilmFn({ id: parseInt(id!) });
     }, [fetchFilmFn, id]);
 
@@ -46,8 +45,6 @@ export function FilmPage() {
             fetchFavoriteFilmsFn();
         }
     }, [fetchFavoriteFilmsFn]);
-
-    console.log(favoriteFilms, id)
 
     const filmInFavorite = useMemo(
         () => (favoriteFilms ?? []).find(film => film.id === id) !== undefined,

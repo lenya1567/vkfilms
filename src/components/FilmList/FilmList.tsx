@@ -37,8 +37,6 @@ export function FilmsList(props: FilmsListProps) {
         }
     }, [filmsContainerFinish, props.onNextFilms]);
 
-    console.log(props.selectedFilms)
-
     return <SimpleGrid padding="xl" columns={5} gap="m" flexGrow={1}>
         {(props.filmsList ?? films.films).map((film, index) =>
             <Card className={styles.relative} key={film.id + "_" + index} mode="shadow" onClick={() => props.onFilmSelect?.(film)}>
