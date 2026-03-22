@@ -1,0 +1,30 @@
+.fullPage {
+    min-height: 100vh;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.card {
+    min-width: 900px;
+    max-width: 900px;
+}
+
+.poster {
+    aspect-ratio: 2 / 3;
+}
+
+.title {
+    color: gray;
+}
+
+.noWrap {
+    flex-wrap: nowrap !important;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: unset !important;
+}
